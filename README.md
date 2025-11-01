@@ -3,7 +3,7 @@ Keymaster's Keep games
 
 Currently includes:
 
-Puyo Puyo 20th Anniversary (NDS, Wii, 3DS, PSP)
+Puyo Puyo 20th Anniversary (NDS, Wii, 3DS, PSP)  
 Puyo Puyo 15th Anniversary (NDS, Wii, PSP, PS2)
 
 Plans to include:  
