@@ -15,10 +15,7 @@ from ..enums import KeymastersKeepGamePlatforms
 @dataclass
 class PP15ArchipelagoOptions:
     pass
-
-@dataclass
-
-
+    
 class PuyoPuyo15thAnniversaryGame(Game):
     name = "Puyo Puyo 15th Anniversary"
     platform = KeymastersKeepGamePlatforms.NDS
@@ -113,3 +110,4 @@ class PuyoPuyo15thAnniversaryGame(Game):
             "B",
             "A",
         ]
+
