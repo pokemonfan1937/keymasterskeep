@@ -72,7 +72,7 @@ class GnosiaGame(Game):
                 label = "Win while collaborating with CHARACTER with PLAYERCOUNT4 Crew and 4 Gnosia",
                 data = {
                     "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT1": (self.playercount4, 1),
+                    "PLAYERCOUNT4": (self.playercount4, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
@@ -132,7 +132,7 @@ class GnosiaGame(Game):
                 label = "Win as ROLE with PLAYERCOUNT4 Crew and 4 Gnosia",
                 data = {
                     "ROLE": (self.roles, 1),
-                    "PLAYERCOUNT1": (self.playercount4, 1),
+                    "PLAYERCOUNT4": (self.playercount4, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
@@ -224,5 +224,6 @@ class GnosiaGame(Game):
     @staticmethod
     def playercount6() -> List[int]:
         return list(range(15, 16))
+
 
 
