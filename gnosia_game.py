@@ -142,7 +142,7 @@ class GnosiaGame(Game):
                 label = "Win as ROLE with PLAYERCOUNT5 Crew and 5 Gnosia",
                 data = {
                     "ROLE": (self.roles, 1),
-                    "PLAYERCOUNT5": (self.playercount1, 1),
+                    "PLAYERCOUNT5": (self.playercount5, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
@@ -224,4 +224,5 @@ class GnosiaGame(Game):
     @staticmethod
     def playercount6() -> List[int]:
         return list(range(15, 16))
+
 
