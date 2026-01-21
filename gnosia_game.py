@@ -39,69 +39,19 @@ class GnosiaGame(Game):
     def game_objective_templates(self) -> List [GameObjectiveTemplate]:
         game_objective_templates = [
             GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT1 Crew and 1 Gnosia",
+                label = "Win while collaborating with CHARACTER as ROLE",
                 data = {
                     "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT1": (self.playercount1, 1),
+                    "ROLE": (self.roles, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
-            ),
-            GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT2 Crew and 2 Gnosia",
-                data = {
-                    "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT2": (self.playercount2, 1),
-                },
-                is_time_consuming = False,
-                is_difficult = False,
-                weight = 4,
-            ),
-            GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT3 Crew and 3 Gnosia",
-                data = {
-                    "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT3": (self.playercount3, 1),
-                },
-                is_time_consuming = False,
-                is_difficult = False,
-                weight = 4,
-            ),
-            GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT4 Crew and 4 Gnosia",
-                data = {
-                    "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT4": (self.playercount4, 1),
-                },
-                is_time_consuming = False,
-                is_difficult = False,
-                weight = 4,
-            ),
-            GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT5 Crew and 5 Gnosia",
-                data = {
-                    "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT5": (self.playercount5, 1),
-                },
-                is_time_consuming = False,
-                is_difficult = False,
-                weight = 4,
-            ),
-            GameObjectiveTemplate(
-                label = "Win while collaborating with CHARACTER with PLAYERCOUNT6 Crew and 6 Gnosia",
-                data = {
-                    "CHARACTER": (self.characters, 1),
-                    "PLAYERCOUNT6": (self.playercount6, 1),
-                },
-                is_time_consuming = False,
-                is_difficult = False,
-                weight = 4,
+                weight = 24,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT1 Crew and 1 Gnosia",
                 data = {
-                    "ROLE": (self.roles, 1),
+                    "ROLE": (self.roles1, 1),
                     "PLAYERCOUNT1": (self.playercount1, 1),
                 },
                 is_time_consuming = False,
@@ -132,7 +82,7 @@ class GnosiaGame(Game):
                 label = "Win as ROLE with PLAYERCOUNT4 Crew and 4 Gnosia",
                 data = {
                     "ROLE": (self.roles, 1),
-                    "PLAYERCOUNT4": (self.playercount4, 1),
+                    "PLAYERCOUNT1": (self.playercount4, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
@@ -202,6 +152,18 @@ class GnosiaGame(Game):
         ]
     
     @staticmethod
+    def roles() -> List[str]:
+        return [
+            "Crew",
+            "Gnosia",
+            "Engineer",
+            "Doctor",
+            "Guardian Angel",
+            "AC Follower",
+            "Bug",
+        ]
+    
+    @staticmethod
     def playercount1() -> List[int]:
         return list(range(5, 16))
     
@@ -224,6 +186,3 @@ class GnosiaGame(Game):
     @staticmethod
     def playercount6() -> List[int]:
         return list(range(15, 16))
-
-
-
