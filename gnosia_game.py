@@ -139,14 +139,13 @@ class GnosiaGame(Game):
         ]
     
     @staticmethod
-    def roles() -> List[str]:
+    def roles1() -> List[str]:
         return [
             "Crew",
             "Gnosia",
             "Engineer",
             "Doctor",
             "Guardian Angel",
-            "Guard Duty",
             "AC Follower",
             "Bug",
         ]
@@ -186,3 +185,4 @@ class GnosiaGame(Game):
     @staticmethod
     def playercount6() -> List[int]:
         return list(range(15, 16))
+
