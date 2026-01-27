@@ -51,22 +51,60 @@ class GnosiaGame(Game):
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT1 Crew and 1 Gnosia",
                 data = {
-                    "ROLE": (self.roles1, 1),
+                    "ROLE": (self.humanroles1, 1),
                     "PLAYERCOUNT1": (self.playercount1, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 5,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as ROLE with PLAYERCOUNT1 Crew and 1 Gnosia",
+                data = {
+                    "ROLE": (self.gnosiaroles, 1),
+                    "PLAYERCOUNT1": (self.playercount1, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = True,
+                weight = 2,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as Bug with PLAYERCOUNT1 Crew and 1 Gnosia",
+                data = {
+                    "PLAYERCOUNT1": (self.playercount1, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = False,
+                weight = 1,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT2 Crew and 2 Gnosia",
                 data = {
-                    "ROLE": (self.roles, 1),
+                    "ROLE": (self.humanroles, 1),
                     "PLAYERCOUNT2": (self.playercount2, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 5,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as ROLE with PLAYERCOUNT2 Crew and 2 Gnosia",
+                data = {
+                    "ROLE": (self.gnosiaroles, 1),
+                    "PLAYERCOUNT2": (self.playercount2, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = True,
+                weight = 2,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as Bug with PLAYERCOUNT2 Crew and 2 Gnosia",
+                data = {
+                    "PLAYERCOUNT2": (self.playercount2, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = False,
+                weight = 1,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT3 Crew and 3 Gnosia",
@@ -76,7 +114,7 @@ class GnosiaGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 8,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT4 Crew and 4 Gnosia",
@@ -86,27 +124,65 @@ class GnosiaGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 8,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT5 Crew and 5 Gnosia",
                 data = {
-                    "ROLE": (self.roles, 1),
+                    "ROLE": (self.humanroles, 1),
+                    "PLAYERCOUNT5": (self.playercount5, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = True,
+                weight = 5,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as ROLE with PLAYERCOUNT5 Crew and 5 Gnosia",
+                data = {
+                    "ROLE": (self.gnosiaroles, 1),
                     "PLAYERCOUNT5": (self.playercount5, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 2,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as Bug with PLAYERCOUNT5 Crew and 5 Gnosia",
+                data = {
+                    "PLAYERCOUNT5": (self.playercount5, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = False,
+                weight = 1,
             ),
             GameObjectiveTemplate(
                 label = "Win as ROLE with PLAYERCOUNT6 Crew and 6 Gnosia",
                 data = {
-                    "ROLE": (self.roles, 1),
+                    "ROLE": (self.humanroles, 1),
+                    "PLAYERCOUNT6": (self.playercount6, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = True,
+                weight = 5,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as ROLE with PLAYERCOUNT6 Crew and 6 Gnosia",
+                data = {
+                    "ROLE": (self.gnosiaroles, 1),
                     "PLAYERCOUNT6": (self.playercount6, 1),
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 4,
+                weight = 2,
+            ),
+            GameObjectiveTemplate(
+                label = "Win as Bug with PLAYERCOUNT6 Crew and 6 Gnosia",
+                data = {
+                    "PLAYERCOUNT6": (self.playercount6, 1),
+                },
+                is_time_consuming = False,
+                is_difficult = False,
+                weight = 1,
             ),
             GameObjectiveTemplate(
                 label = "Win with Random Settings",
@@ -139,27 +215,42 @@ class GnosiaGame(Game):
         ]
     
     @staticmethod
-    def roles1() -> List[str]:
+    def humanroles1() -> List[str]:
         return [
             "Crew",
-            "Gnosia",
             "Engineer",
             "Doctor",
             "Guardian Angel",
+        ]
+    
+    @staticmethod
+    def humanroles() -> List[str]:
+        return [
+            "Crew",
+            "Engineer",
+            "Doctor",
+            "Guardian Angel",
+            "Guard Duty"
+        ]
+    
+    @staticmethod
+    def gnosiaroles() -> List[str]:
+        return [
+            "Gnosia",
             "AC Follower",
-            "Bug",
         ]
     
     @staticmethod
     def roles() -> List[str]:
         return [
             "Crew",
-            "Gnosia",
             "Engineer",
             "Doctor",
             "Guardian Angel",
-            "AC Follower",
+            "Guard Duty"
             "Bug",
+            "Gnosia",
+            "AC Follower",
         ]
     
     @staticmethod
