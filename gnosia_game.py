@@ -23,10 +23,13 @@ class GnosiaGame(Game):
     platforms_other = [
         KeymastersKeepGamePlatforms.VITA,
         KeymastersKeepGamePlatforms.SW,
+        KeymastersKeepGamePlatforms.SW2,
         KeymastersKeepGamePlatforms.PS4,
         KeymastersKeepGamePlatforms.PS5,
         KeymastersKeepGamePlatforms.XONE,
         KeymastersKeepGamePlatforms.XSX,
+        KeymastersKeepGamePlatforms.IOS,
+        KeymastersKeepGamePlatforms.AND,
     ]
 
     is_adult_only_or_unrated = False

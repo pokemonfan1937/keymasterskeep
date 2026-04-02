@@ -44,7 +44,7 @@ class PuyoPuyo20thAnniversaryGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = True,
-                weight = 24,
+                weight = 6,
             ),
             GameObjectiveTemplate(
                 label = "Complete STORY on at least DIFFICULTY difficulty with at least RANK rank choosing random ruleset",
@@ -55,7 +55,7 @@ class PuyoPuyo20thAnniversaryGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = True,
-                weight = 24,
+                weight = 6,
             ),
             GameObjectiveTemplate(
                 label = "Complete STORY on at least DIFFICULTY difficulty with at least S rank choosing RULESET ruleset",
@@ -66,7 +66,7 @@ class PuyoPuyo20thAnniversaryGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = True,
-                weight = 24,
+                weight = 6,
             ),
             GameObjectiveTemplate(
                 label = "Complete STORY on at least DIFFICULTY difficulty with at least RANK rank choosing RULESET",
@@ -78,7 +78,7 @@ class PuyoPuyo20thAnniversaryGame(Game):
                 },
                 is_time_consuming = False,
                 is_difficult = False,
-                weight = 244,
+                weight = 6,
             ),
         ]
         if self.include_challenge_battles:
