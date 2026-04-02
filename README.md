@@ -5,7 +5,8 @@ Currently includes:
 
 Puyo Puyo 20th Anniversary (NDS, Wii, 3DS, PSP)  
 Puyo Puyo 15th Anniversary (NDS, Wii, PSP, PS2)  
-Gnosia (PC, VITA, SW, PS4, PS5, XONE, XSX)
+Gnosia (PC, VITA, SW, SW2, PS4, PS5, XONE, XSX, IOS, AND)
+Tokyo Xanadu eX+ (VITA, PS4, PS5, PC, SW, SW2)
 
 Plans to include:  
 Compile Puyo Medley (Puyo Puyo 1, 2, Sun, and n)  
