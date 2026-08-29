@@ -50,7 +50,7 @@ class TokyoXanaduGame(Game):
                 GameObjectiveTemplate(
                     label = "Complete DUNGEON with an S rank using CHARACTERS",
                     data = {
-                        "CHARACTER": (self.characters, 3),
+                        "CHARACTERS": (self.characters, 3),
                         "DUNGEON": (self.dungeons, 1),
                     },
                     is_time_consuming = False,
